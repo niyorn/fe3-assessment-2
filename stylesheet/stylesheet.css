@@ -1,9 +1,105 @@
-*, *::before, *::after{
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.container{
-  
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+
+.bar {
+  fill: blue;
+  width: 10px;
+}
+
+.bar:hover{
+  border: 2px;
+}
+
+.bar.underweight {
+  fill: #40C4FF;
+}
+
+.bar.normalweight {
+  fill: #00E676;
+}
+
+.bar.overweight {
+  fill: #FF80AB;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 100px;
+  right: 10px;
+}
+
+.button-container button {
+  padding: 0.4rem;
+  background: #CFD8DC;
+  color: white;
+  margin-bottom: 0.6rem;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.button-container button:hover{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+button.active{
+    background: #1DE9B6;
+    transform: scale(1.2);
+}
+
+.legend-container{
+  position: fixed;
+  right: 0;
+  top: 210px;
+
+  width: 200px;
+  height: 100px;
+}
+
+.catagory:hover{
+  cursor: pointer;
+}
+
+.cantagory-container{
+  display: flex;
+  align-items: center;
+}
+
+.cantagory-container span{
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+#catagory1, #catagory2, #catagory3{
+  width: 50px;
+  height: 50px;
+  background: red;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+#catagory1, .overweight{
+background: #FF80AB;
+fill: #FF80AB;
+}
+
+#catagory2{
+  background:  #00E676;
+}
+
+#catagory3{
+  background: #40C4FF;
 }

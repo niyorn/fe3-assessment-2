@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>@niyorn</title>
-  <link rel="stylesheet" href="/stylesheet/stylesheet.css">
+  <link rel="stylesheet" href="stylesheet/stylesheet.css">
 </head>
+
 <body>
 
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="/script/script.js" charset="utf-8"></script>
+  <div class="container">
+    <svg width="1500" height="900">
+    <div class="legend-container">
+      <div class="cantagory-container">
+        <div id="catagory1" class="catagory"></div>
+        <span>Overgewicht</span>
+    </div>
+      <div class="cantagory-container">
+        <div id="catagory2" class="catagory"></div>
+        <span>Normaalgewicht</span>
+      </div>
+      <div class="cantagory-container">
+        <div id="catagory3" class="catagory"></div>
+        <span>Ondergewicht</span>
+      </div>
+    </div>
+    </svg>
+
+    <div class="button-container">
+      <button id="man-data" type="button" name="manData">show man</button>
+      <button id="women-data" type="button" name="womenData">show women</button>
+    </div>
+  </div>
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="script/script.js" charset="utf-8"></script>
 </body>
+
 </html>
